@@ -1,5 +1,6 @@
 * {
-    outline: solid red 1px;
+    /* outline: solid red 1px; */
+    font-size: 18px; /* set defualt font size for webpage */
 }
 
 body {
@@ -10,11 +11,8 @@ body {
 }
 
 button {
-    background-color: #3882f6;
     border-radius: 5px;
     border-style: none;
-    font-size: 18px;
-    color: #f9faf8;
     padding: 4px 30px;
 }
 
@@ -27,68 +25,161 @@ ul {
     padding: 0;
 }
 
+/* Background and text colors for webpage */
+
+button {
+    background-color: #3882f6;
+}
+
+img {
+    border-color: #3882f6;
+}
+
 .footer,
 .header,
 .hero {
     background-color: #1f2937;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 80vh;
+.header-container .logo,
+.hero-container .title,
+button {
+    color: #f9faf8;
 }
 
-.header-container {
-    width: 83%;
-    max-width: 83%;
+.header-container .nav-links,
+.hero-container .content,
+.hero-container .img {
+    color: #e5e7eb;
 }
 
-.header-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    max-height: 50px;
-    width: 100%;
+.main-container .title,
+.quote-container .quote {
+    color: #1f2937;
 }
 
-.header-bot {
-    display: flex;
-    flex-grow: 1;
+.quote {
+    background-color: #e5e7eb;
 }
 
-.header-details {
-    flex-wrap: wrap;
-}
+/* font weights, styles and sizes or text */
 
-.header-bot .title,
-.header-bot .content,
-.header-bot .button {
-    flex-basis: 50%;
-}
-
-.header-bot .img {
-}
-
-.header-top .logo {
+.header-container .logo {
     font-size: 24px;
     font-weight: 900;
 }
 
-.header-bot .title {
+.hero-container .title {
     font-size: 48px;
     font-weight: 900;
 }
 
-.header-top .logo,
-.header-top .nav-links,
-.header-bot .title {
-    color: #f9faf8;
+.main-container .title {
+    font-size: 36px;
+    font-weight: 900;
 }
 
-.header-bot .content {
-    color: #e5e7eb;
+.quote-container .text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-container .author {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+/* Flexbox layout for containers */
+
+.header-container,
+.hero-container,
+.main-container,
+.quote-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    max-width: 75%;
+}
+
+.header,
+.hero,
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header container */
+
+.header {
+    height: 10vh;
+}
+
+.header-container {
+    height: 50px;
+    max-height: 50px;
+}
+
+/* hero container */
+.hero {
+    height: 60vh;
+}
+
+.hero-container {
+    gap: 10em;
+}
+
+.hero-container .hero-details {
+    width: 50%;
+}
+
+.hero-container .hero-details .title,
+.hero-container .hero-details .content {
+    padding-bottom: 20px;
+}
+
+.hero-container .img {
+    min-width: 500px;
+    min-height: 250px;
+    background-color: grey;
+    align-content: center;
+    text-align: center;
+}
+
+/* main container */
+
+.main-container {
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0.5em 0;
+}
+
+.main-container .title {
+    text-align: center;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.main-container .card-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-container .cards {
+    max-width: 175px;
+    margin: 0 10px;
+}
+
+.main-container img {
+    min-width: 175px;
+    min-height: 175px;
+    /* border-radius: 20px;
+    border-style: solid 2px #3382f6; */
 }
