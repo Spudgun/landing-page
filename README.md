@@ -5,7 +5,6 @@ A basic landing page created using an [assignment](https://www.theodinproject.co
 ## Table of Contents
 
 -   [Assignment](#assignment)
--   [Skills](#skills)
 
 ## Assignment
 
@@ -18,13 +17,3 @@ Don't forget to commit early & often! You can [reference the Commit Message less
 1. Many of the elements on this page are very similar to things you saw in our flexbox exercises... feel free to go back to those if you need a refresher.
 1. Do not worry about making your project look nice on a mobile device. We'll learn that later.
 1. When you finish, don't forget to push it up to GitHub!
-
-## Skills
-
-I was tasked with creating a very basic website to showcase my use of the following skills:
-
--   Creating a boilerplate for an HTML page and replicating this across child pages.
--   Creating an img/ folder for storing the images for use within the webpages
--   Using static and dynamic referencing for images and links within the website
--   Utilising unordered lists, headings and paragraphs.
--   Using git command line to commit, label and push my changes to the GitHub Repoistory.
