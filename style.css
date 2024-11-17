@@ -27,7 +27,8 @@ ul {
 
 /* Background and text colors for webpage */
 
-button {
+button,
+.action-container-bg {
     background-color: #3882f6;
 }
 
@@ -43,13 +44,15 @@ img {
 
 .header-container .logo,
 .hero-container .title,
+.footer-container,
 button {
     color: #f9faf8;
 }
 
 .header-container .nav-links,
 .hero-container .content,
-.hero-container .img {
+.hero-container .img,
+.action-container-bg {
     color: #e5e7eb;
 }
 
@@ -64,7 +67,8 @@ button {
 
 /* font weights, styles and sizes or text */
 
-.header-container .logo {
+.header-container .logo,
+.action-container-bg .title {
     font-size: 24px;
     font-weight: 900;
 }
@@ -95,18 +99,22 @@ button {
 .header-container,
 .hero-container,
 .main-container,
-.quote-container {
+.quote-container,
+.action-container-bg,
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
-    max-width: 75%;
+    width: 73vw;
+    max-width: 73vw;
 }
 
 .header,
 .hero,
 .main,
-.quote {
+.quote,
+.action,
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,17 +160,16 @@ button {
 /* main container */
 
 .main-container {
-    min-height: 200px;
+    min-height: 20vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    padding: 0.5em 0;
 }
 
 .main-container .title {
     text-align: center;
-    width: 100%;
+    width: 100vw;
     margin: 40px 0;
 }
 
@@ -171,11 +178,12 @@ button {
     align-content: center;
     justify-content: center;
     text-align: center;
+    gap: 3em;
+    margin-bottom: 3em;
 }
 
 .main-container .cards {
     max-width: 175px;
-    margin: 0 3em;
 }
 
 .main-container img {
@@ -188,11 +196,49 @@ button {
 /* quote section */
 
 .quote-container {
-    min-height: 200px;
+    min-height: 25vh;
     display: flex;
     flex-wrap: wrap;
     margin: 5em 4em;
     gap: 1em;
     justify-content: end;
-    width: 55%;
+    width: 55vw;
+}
+
+/* action section */
+
+.action-container-bg {
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    border-radius: 0.5em;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 55vw;
+}
+
+.action-container .title {
+    margin-bottom: 0.25em;
+}
+
+.action-container .details {
+    margin-top: 0.25em;
+}
+
+.action-container button {
+    border: white 2px solid;
+    border-radius: 0.5em;
+}
+
+/* footer section */
+
+.footer-container {
+    min-height: 10vh;
+    justify-content: center;
+    align-content: center;
 }
